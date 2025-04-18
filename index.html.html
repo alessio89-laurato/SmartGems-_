@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMARTGEMS - Gioielli Intelligenti</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#d4af37',secondary:'#222222'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Montserrat', sans-serif;
+}
+.gold-text {
+color: #d4af37;
+}
+.gold-bg {
+background-color: #d4af37;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header -->
+<header class="bg-secondary text-white py-4 px-6">
+<div class="container mx-auto flex justify-between items-center">
+<div class="flex items-center">
+<h1 class="text-primary text-3xl font-bold">SMARTGEMS</h1>
+<p class="ml-2 text-sm text-gray-300">More than just earrings</p>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#" class="text-white hover:text-primary transition">Home</a>
+<a href="#shop" class="text-white hover:text-primary transition">Shop</a>
+<a href="#about" class="text-white hover:text-primary transition">About</a>
+<a href="#contatti" class="text-white hover:text-primary transition">Contatti</a>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-shopping-bag-line text-white"></i>
+</div>
+</nav>
+<div class="md:hidden w-6 h-6 flex items-center justify-center">
+<i class="ri-menu-line text-white"></i>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative">
+<div class="w-full h-[500px]" style="background-image: url('https://static.readdy.ai/image/d90080df2a011bbb26e0cf295596899a/360fcedf58d57cee8d62f76a22ad3881.png'); background-size: cover; background-position: center;">
+<div class="container mx-auto h-full flex items-center">
+<div class="w-full md:w-1/2 px-6 py-12 bg-opacity-80">
+<div class="bg-white bg-opacity-80 p-8 rounded">
+<button class="bg-primary text-white px-6 py-2 mb-4 !rounded-button whitespace-nowrap">SCOPRI ORA</button>
+<h2 class="text-4xl md:text-5xl font-bold text-secondary mb-2">Eleva il tuo stile</h2>
+<h2 class="text-4xl md:text-5xl font-bold text-secondary mb-4">Potenzia la tua vita</h2>
+<p class="text-lg text-gray-800">Con SmartGems, il gioiello incontra l'intelligenza.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="bg-[#f9f5eb] py-16">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded shadow-md text-center">
+<div class="w-16 h-16 flex items-center justify-center mx-auto mb-4">
+<i class="ri-flashlight-line text-4xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">RICARICA WIRELESS</h3>
+<p class="text-gray-700">Sempre pronti, sempre smart. Nessun cavo, solo libertà.</p>
+</div>
+<div class="bg-white p-8 rounded shadow-md text-center">
+<div class="w-16 h-16 flex items-center justify-center mx-auto mb-4">
+<i class="ri-headphone-line text-4xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">AUDIO DIREZIONALE</h3>
+<p class="text-gray-700">Conduzione ossea. Ascolta musica e chiamate senza coprire l'orecchio.</p>
+</div>
+<div class="bg-white p-8 rounded shadow-md text-center">
+<div class="w-16 h-16 flex items-center justify-center mx-auto mb-4">
+<i class="ri-robot-line text-4xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">IA INTEGRATA</h3>
+<p class="text-gray-700">Più di un accessorio: Traduci, ascolta e monitora con stile.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Shop Section -->
+<section id="shop" class="py-16 bg-white">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">I Nostri Prodotti</h2>
+<div class="flex flex-col md:flex-row">
+<!-- Filters -->
+<div class="w-full md:w-1/4 mb-8 md:mb-0 md:pr-8">
+<div class="bg-gray-50 p-6 rounded">
+<h3 class="text-lg font-semibold mb-4">Categorie</h3>
+<div class="space-y-2 mb-6">
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 border border-primary rounded-sm bg-primary">
+<i class="ri-check-line text-white text-sm"></i>
+</div>
+<span>Auricolari</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 border border-gray-300 rounded-sm">
+</div>
+<span>Accessori</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 border border-gray-300 rounded-sm">
+</div>
+<span>Limited Edition</span>
+</div>
+</div>
+<h3 class="text-lg font-semibold mb-4">Colore</h3>
+<div class="space-y-2 mb-6">
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 border border-primary rounded-full bg-primary">
+<i class="ri-check-line text-white text-sm"></i>
+</div>
+<span>Oro</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 border border-gray-300 rounded-full bg-gray-200">
+</div>
+<span>Argento</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2 border border-gray-300 rounded-full bg-[#f7d3c0]">
+</div>
+<span>Rose Gold</span>
+</div>
+</div>
+<h3 class="text-lg font-semibold mb-4">Prezzo</h3>
+<div class="mb-6">
+<div class="relative h-2 bg-gray-200 rounded-full">
+<div class="absolute h-2 bg-primary rounded-full" style="width: 60%; left: 20%"></div>
+<div class="absolute w-4 h-4 bg-white border-2 border-primary rounded-full -mt-1" style="left: 20%"></div>
+<div class="absolute w-4 h-4 bg-white border-2 border-primary rounded-full -mt-1" style="left: 80%"></div>
+</div>
+<div class="flex justify-between mt-2">
+<span>€100</span>
+<span>€500</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Products Grid -->
+<div class="w-full md:w-3/4">
+<div class="flex justify-between items-center mb-6">
+<p class="text-gray-600">Mostrando 9 di 24 prodotti</p>
+<div class="relative">
+<select class="appearance-none bg-white border border-gray-300 rounded-md py-2 pl-4 pr-8 cursor-pointer">
+<option>Popolarità</option>
+<option>Prezzo: dal più basso</option>
+<option>Prezzo: dal più alto</option>
+<option>Novità</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center pointer-events-none">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Product 1 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Gold%20spherical%20earrings%20with%20modern%20design%2C%20displayed%20on%20a%20neutral%20beige%20background%20with%20soft%20lighting%2C%20showcasing%20premium%20jewelry%20craftsmanship%20with%20smart%20technology%20integration%2C%20minimalist%20luxury%20aesthetic&width=400&height=400&seq=3&orientation=squarish" alt="SmartGems Auricolari Oro" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1">SmartGems Classico Oro</h3>
+<p class="text-primary font-bold mb-3">€299,00</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button whitespace-nowrap">Aggiungi al carrello</button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://static.readdy.ai/image/d90080df2a011bbb26e0cf295596899a/c256973654ebbe6b4e6f5671bdcf7690.png" alt="SmartGems Auricolari Argento" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1">SmartGems Classico Argento</h3>
+<p class="text-primary font-bold mb-3">€279,00</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button whitespace-nowrap">Aggiungi al carrello</button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Rose%20gold%20spherical%20earrings%20with%20modern%20design%2C%20displayed%20on%20a%20neutral%20beige%20background%20with%20soft%20lighting%2C%20showcasing%20premium%20jewelry%20craftsmanship%20with%20smart%20technology%20integration%2C%20minimalist%20luxury%20aesthetic&width=400&height=400&seq=4&orientation=squarish" alt="SmartGems Auricolari Rose Gold" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1">SmartGems Classico Rose Gold</h3>
+<p class="text-primary font-bold mb-3">€289,00</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button whitespace-nowrap">Aggiungi al carrello</button>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://static.readdy.ai/image/d90080df2a011bbb26e0cf295596899a/0e185d91866084f214dfbbf17106b956.png" alt="SmartGems Premium Oro" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1">SmartGems Premium Oro</h3>
+<p class="text-primary font-bold mb-3">€399,00</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button whitespace-nowrap">Aggiungi al carrello</button>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Premium%20silver%20earrings%20with%20diamond%20accents%2C%20spherical%20design%20on%20beige%20background%2C%20luxury%20jewelry%20with%20smart%20technology%2C%20elegant%20presentation&width=400&height=400&seq=6&orientation=squarish" alt="SmartGems Premium Argento" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1">SmartGems Premium Argento</h3>
+<p class="text-primary font-bold mb-3">€379,00</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button whitespace-nowrap">Aggiungi al carrello</button>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Premium%20rose%20gold%20earrings%20with%20diamond%20accents%2C%20spherical%20design%20on%20beige%20background%2C%20luxury%20jewelry%20with%20smart%20technology%2C%20elegant%20presentation&width=400&height=400&seq=7&orientation=squarish" alt="SmartGems Premium Rose Gold" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1">SmartGems Premium Rose Gold</h3>
+<p class="text-primary font-bold mb-3">€389,00</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button whitespace-nowrap">Aggiungi al carrello</button>
+</div>
+</div>
+<!-- Product 7 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Luxury%20limited%20edition%20gold%20smart%20earrings%20with%20diamond%20accents%20and%20intricate%20filigree%20details%2C%20displayed%20on%20a%20beige%20silk%20background%20with%20soft%20lighting%2C%20showcasing%20premium%20craftsmanship%20and%20exclusive%20design%20elements&width=400&height=400&seq=16&orientation=squarish" alt="SmartGems Limited Edition Oro" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1">SmartGems Limited Edition Oro</h3>
+<p class="text-primary font-bold mb-3">€499,00</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button whitespace-nowrap">Aggiungi al carrello</button>
+</div>
+</div>
+<!-- Product 8 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Wireless%20charging%20case%20for%20smart%20earrings%2C%20gold%20finish%20with%20premium%20design%2C%20luxury%20tech%20accessory%20on%20beige%20background&width=400&height=400&seq=9&orientation=squarish" alt="Custodia di Ricarica Oro" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1">Custodia di Ricarica Oro</h3>
+<p class="text-primary font-bold mb-3">€129,00</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button whitespace-nowrap">Aggiungi al carrello</button>
+</div>
+</div>
+<!-- Product 9 -->
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Gift%20set%20of%20smart%20earrings%20with%20charging%20case%20and%20accessories%2C%20luxury%20jewelry%20tech%20package%20in%20gold%20finish%20on%20beige%20background&width=400&height=400&seq=10&orientation=squarish" alt="Set Regalo SmartGems" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-semibold text-lg mb-1">Set Regalo SmartGems</h3>
+<p class="text-primary font-bold mb-3">€449,00</p>
+<button class="w-full bg-primary text-white py-2 !rounded-button whitespace-nowrap">Aggiungi al carrello</button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center mt-10">
+<div class="flex space-x-2">
+<a href="#" class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full hover:border-primary">
+<i class="ri-arrow-left-s-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center border border-primary bg-primary text-white rounded-full">1</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full hover:border-primary">2</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full hover:border-primary">3</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full hover:border-primary">
+<i class="ri-arrow-right-s-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-16 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Chi Siamo</h2>
+<div class="bg-white rounded-lg shadow-md overflow-hidden mb-12">
+<div class="md:flex">
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=Elegant%20jewelry%20workshop%20with%20artisans%20crafting%20smart%20earrings%2C%20combining%20traditional%20jewelry%20making%20with%20modern%20technology%2C%20luxury%20brand%20atmosphere%20with%20soft%20lighting%20and%20premium%20materials&width=600&height=400&seq=11&orientation=landscape" alt="La Nostra Storia" class="w-full h-full object-cover object-top">
+</div>
+<div class="md:w-1/2 p-8">
+<h3 class="text-2xl font-bold mb-4">La Nostra Storia</h3>
+<p class="text-gray-700 mb-4">Fondata nel 2020 da un team di designer di gioielli e ingegneri tecnologici, SmartGems è nata dalla visione di creare accessori che uniscono bellezza e funzionalità in modo innovativo.</p>
+<p class="text-gray-700 mb-4">La nostra missione è ridefinire il concetto di gioielleria, creando pezzi che non solo esaltano la bellezza di chi li indossa, ma offrono anche funzionalità smart che migliorano la vita quotidiana.</p>
+<div class="flex space-x-4 mt-6">
+<div class="text-center">
+<div class="text-primary font-bold text-3xl">2020</div>
+<div class="text-sm text-gray-600">Fondazione</div>
+</div>
+<div class="text-center">
+<div class="text-primary font-bold text-3xl">15+</div>
+<div class="text-sm text-gray-600">Paesi</div>
+</div>
+<div class="text-center">
+<div class="text-primary font-bold text-3xl">50k+</div>
+<div class="text-sm text-gray-600">Clienti</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+<div class="bg-white rounded-lg shadow-md p-8">
+<div class="w-12 h-12 flex items-center justify-center mb-4 bg-primary bg-opacity-10 rounded-full">
+<i class="ri-lightbulb-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Innovazione</h3>
+<p class="text-gray-700 mb-4">La nostra tecnologia proprietaria combina conduzione ossea, connettività Bluetooth e sensori avanzati in un design elegante e compatto.</p>
+<p class="text-gray-700">Ogni prodotto SmartGems è protetto da brevetti internazionali e sottoposto a rigorosi test di qualità e sicurezza.</p>
+</div>
+<div class="bg-white rounded-lg shadow-md p-8">
+<div class="w-12 h-12 flex items-center justify-center mb-4 bg-primary bg-opacity-10 rounded-full">
+<i class="ri-leaf-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Sostenibilità</h3>
+<p class="text-gray-700 mb-4">Utilizziamo solo materiali eticamente sourced e processi produttivi a basso impatto ambientale. I nostri gioielli sono realizzati con oro e argento riciclati al 100%.</p>
+<p class="text-gray-700">Per ogni prodotto venduto, piantiamo un albero attraverso la nostra partnership con organizzazioni ambientali globali.</p>
+</div>
+</div>
+
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contatti" class="py-16 bg-white">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-12">Contattaci</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<form class="bg-gray-50 p-8 rounded-lg shadow-md">
+<div class="mb-6">
+<label for="name" class="block text-gray-700 mb-2">Nome e Cognome</label>
+<input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" placeholder="Il tuo nome completo">
+</div>
+<div class="mb-6">
+<label for="email" class="block text-gray-700 mb-2">Email</label>
+<input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" placeholder="La tua email">
+</div>
+<div class="mb-6">
+<label for="phone" class="block text-gray-700 mb-2">Telefono</label>
+<input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" placeholder="Il tuo numero di telefono">
+</div>
+<div class="mb-6">
+<label for="subject" class="block text-gray-700 mb-2">Oggetto</label>
+<input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" placeholder="Oggetto del messaggio">
+</div>
+<div class="mb-6">
+<label for="message" class="block text-gray-700 mb-2">Messaggio</label>
+<textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" placeholder="Il tuo messaggio"></textarea>
+</div>
+<div class="flex items-center mb-6">
+<div class="w-5 h-5 flex items-center justify-center mr-2 border border-gray-300 rounded-sm">
+</div>
+<span class="text-sm text-gray-700">Accetto la privacy policy e i termini di servizio</span>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button whitespace-nowrap">Invia Messaggio</button>
+</form>
+</div>
+<div>
+<div class="bg-gray-50 p-8 rounded-lg shadow-md mb-8">
+<h3 class="text-xl font-bold mb-6">Informazioni di Contatto</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center mr-4 bg-primary bg-opacity-10 rounded-full">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold">Indirizzo</h4>
+<p class="text-gray-700">Via della Moda, 123<br>20100 Milano, Italia</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center mr-4 bg-primary bg-opacity-10 rounded-full">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold">Email</h4>
+<p class="text-gray-700">info@smartgems.it<br>supporto@smartgems.it</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center mr-4 bg-primary bg-opacity-10 rounded-full">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold">Telefono</h4>
+<p class="text-gray-700">+39 02 1234567<br>+39 345 6789012</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center mr-4 bg-primary bg-opacity-10 rounded-full">
+<i class="ri-time-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold">Orari</h4>
+<p class="text-gray-700">Lun-Ven: 9:00 - 18:00<br>Sab: 10:00 - 16:00</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="font-semibold mb-4">Seguici</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full">
+<i class="ri-twitter-x-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full">
+<i class="ri-linkedin-fill"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="bg-gray-200 rounded-lg overflow-hidden h-64">
+<img src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png" alt="Mappa" class="w-full h-full object-cover">
+</div>
+</div>
+</div>
+<div class="mt-16">
+<h3 class="text-xl font-bold text-center mb-8">Domande Frequenti</h3>
+<div class="space-y-4 max-w-3xl mx-auto">
+<div class="bg-white border border-gray-200 rounded-lg">
+<button class="flex justify-between items-center w-full px-6 py-4 text-left font-semibold">
+<span>Come funziona la tecnologia di conduzione ossea?</span>
+<i class="ri-arrow-down-s-line"></i>
+</button>
+<div class="px-6 py-4 border-t border-gray-200">
+<p class="text-gray-700">La conduzione ossea trasmette il suono attraverso le ossa del cranio direttamente all'orecchio interno, bypassando il timpano. Questo permette di ascoltare l'audio mantenendo le orecchie libere per percepire i suoni ambientali.</p>
+</div>
+</div>
+<div class="bg-white border border-gray-200 rounded-lg">
+<button class="flex justify-between items-center w-full px-6 py-4 text-left font-semibold">
+<span>Qual è l'autonomia della batteria?</span>
+<i class="ri-add-line"></i>
+</button>
+</div>
+<div class="bg-white border border-gray-200 rounded-lg">
+<button class="flex justify-between items-center w-full px-6 py-4 text-left font-semibold">
+<span>I prodotti SmartGems sono impermeabili?</span>
+<i class="ri-add-line"></i>
+</button>
+</div>
+<div class="bg-white border border-gray-200 rounded-lg">
+<button class="flex justify-between items-center w-full px-6 py-4 text-left font-semibold">
+<span>Come posso effettuare un reso?</span>
+<i class="ri-add-line"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-secondary text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-primary text-2xl font-bold mb-4">SMARTGEMS</h3>
+<p class="text-gray-400 mb-6">Gioielli intelligenti che uniscono eleganza e tecnologia per un'esperienza unica.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 hover:text-primary">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-primary">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-primary">
+<i class="ri-twitter-x-line"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-primary">
+<i class="ri-linkedin-fill"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Link Rapidi</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-primary">Home</a></li>
+<li><a href="#shop" class="text-gray-400 hover:text-primary">Shop</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-primary">Chi Siamo</a></li>
+<li><a href="#contatti" class="text-gray-400 hover:text-primary">Contatti</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Supporto</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-primary">FAQ</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary">Spedizioni</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary">Resi</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary">Garanzia</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary">Assistenza</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Newsletter</h4>
+<p class="text-gray-400 mb-4">Iscriviti per ricevere aggiornamenti sui nuovi prodotti e offerte speciali.</p>
+<div class="flex">
+<input type="email" placeholder="La tua email" class="px-4 py-2 w-full rounded-l border-none focus:outline-none text-gray-800">
+<button class="bg-primary text-white px-4 py-2 rounded-r !rounded-button whitespace-nowrap">Iscriviti</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-10 pt-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 SmartGems. Tutti i diritti riservati.</p>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-400 hover:text-primary text-sm">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-primary text-sm">Termini di Servizio</a>
+<a href="#" class="text-gray-400 hover:text-primary text-sm">Cookie Policy</a>
+</div>
+</div>
+<div class="flex justify-center mt-6 space-x-4">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-visa-line text-gray-400 text-2xl"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-mastercard-line text-gray-400 text-2xl"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-paypal-line text-gray-400 text-2xl"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-apple-fill text-gray-400 text-2xl"></i>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Toggle mobile menu
+const menuButton = document.querySelector('.ri-menu-line');
+if (menuButton) {
+menuButton.addEventListener('click', function() {
+// Mobile menu toggle logic would go here
+});
+}
+// FAQ accordion
+const faqButtons = document.querySelectorAll('.bg-white.border button');
+faqButtons.forEach(button => {
+button.addEventListener('click', function() {
+const content = this.nextElementSibling;
+const isOpen = content.style.display !== 'none';
+if (isOpen) {
+content.style.display = 'none';
+this.querySelector('i').classList.remove('ri-arrow-down-s-line');
+this.querySelector('i').classList.add('ri-add-line');
+} else {
+content.style.display = 'block';
+this.querySelector('i').classList.remove('ri-add-line');
+this.querySelector('i').classList.add('ri-arrow-down-s-line');
+}
+});
+});
+});
+document.addEventListener('DOMContentLoaded', function() {
+// Checkbox functionality
+const checkboxes = document.querySelectorAll('.w-5.h-5.border');
+checkboxes.forEach(checkbox => {
+checkbox.addEventListener('click', function() {
+const hasCheck = this.innerHTML.includes('ri-check-line');
+if (hasCheck) {
+this.innerHTML = '';
+this.classList.remove('bg-primary');
+this.classList.add('border-gray-300');
+} else {
+this.innerHTML = '<i class="ri-check-line text-white text-sm"></i>';
+this.classList.add('bg-primary');
+this.classList.remove('border-gray-300');
+}
+});
+});
+});
+</script>
+</body>
+</html>
